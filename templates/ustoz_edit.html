@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Ustozni tahrirlash: </h2>
+    <br>
+    <br>
+    <form method="post" action="/ustoz/{{u.id}}/edit/">{% csrf_token %}
+        <input type="text" value="{{u.ism}}" name="i">
+        <input type="text" value="{{u.familiya}}" name="f">
+        <input type="text" value="{{u.malumot}}" name="m">
+        <button type="submit">O'zgartirish</button>
+    </form>
+</body>
+</html>
+
+
